@@ -466,9 +466,9 @@
             const extraQuizzes = pcData.quizzes.filter(q => q.isExtra);
 
             return (
-                <div className="h-screen flex flex-col items-center justify-center bg-slate-900 text-white relative overflow-hidden">
-                    <div className="absolute inset-0 z-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center"></div>
-                    <div className="z-10 text-center max-w-5xl w-full p-8 flex flex-col h-full animate-slide-in">
+                <div className="min-h-[100dvh] flex flex-col items-center justify-center bg-slate-900 text-white relative overflow-y-auto">
+                    <div className="absolute inset-0 z-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center fixed"></div>
+                    <div className="z-10 text-center max-w-5xl w-full p-4 md:p-8 flex flex-col animate-slide-in my-auto">
                         <div className="flex-none mb-6">
                             <div className="flex justify-center mb-4">
                                 <div className="p-4 bg-blue-600 rounded-2xl shadow-lg shadow-blue-500/50">
@@ -494,23 +494,23 @@
                             </div>
                         </div>
 
-                        <div className="flex-1 min-h-0 flex flex-col md:flex-row gap-6 w-full text-left">
+                        <div className="flex flex-col md:flex-row gap-6 w-full text-left pb-8">
                             <button 
                                 onClick={() => onSelectMode(null)}
-                                className="group relative p-6 bg-slate-800 border border-slate-700 rounded-xl hover:border-blue-500 hover:bg-slate-700 transition-all shadow-xl hover:-translate-y-1 flex flex-col justify-center items-center text-center md:w-1/3"
+                                className="group relative p-6 bg-slate-800 border border-slate-700 rounded-xl hover:border-blue-500 hover:bg-slate-700 transition-all shadow-xl hover:-translate-y-1 flex flex-col justify-center items-center text-center md:w-1/3 shrink-0"
                             >
                                 <div className="absolute top-4 right-4 bg-blue-500/20 text-blue-400 px-2 py-1 text-xs rounded font-bold">Free Mode</div>
                                 <h3 className="text-2xl font-bold mb-2 group-hover:text-blue-400">自由制作モード</h3>
                                 <p className="text-sm text-slate-400">予算や条件を気にせず、好きなパーツを組み合わせてPCを作成します。</p>
                             </button>
 
-                            <div className="flex-1 flex flex-col gap-4 min-h-0">
+                            <div className="flex-1 flex flex-col gap-4">
                                 {/* Standard Quizzes */}
-                                <div className="flex-1 bg-slate-800/50 border border-slate-700 rounded-xl p-6 backdrop-blur flex flex-col min-h-0">
+                                <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-6 backdrop-blur flex flex-col">
                                     <h3 className="text-xl font-bold mb-4 flex-none flex items-center gap-2">
                                         <span className="text-yellow-400">★</span> クイズに挑戦
                                     </h3>
-                                    <div className="flex-1 overflow-y-auto pr-1 space-y-2 scrollbar-hide">
+                                    <div className="pr-1 space-y-2">
                                         {normalQuizzes.map(q => {
                                             const isCleared = clearedQuizzes.includes(q.id);
                                             return (
@@ -585,7 +585,7 @@
         // --- Independent & Draggable Quiz Window ---
         const QuizWindow = ({ quiz, submissionResult, onSubmit, hasBooted, onViewSpecs, failedAttempts, currentCost }) => {
             const [minimized, setMinimized] = useState(false);
-            const [position, setPosition] = useState({ x: window.innerWidth > 1000 ? 800 : 400, y: 20 });
+            const [position, setPosition] = useState({ x: window.innerWidth > 1000 ? 800 : Math.max(10, (window.innerWidth - 320) / 2), y: 20 });
             const [isDragging, setIsDragging] = useState(false);
             const dragOffset = useRef({ x: 0, y: 0 });
 
