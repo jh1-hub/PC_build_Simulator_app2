@@ -268,32 +268,32 @@
         
         // --- Icons ---
         const Icons = {
-            Cpu: () => <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" /></svg>,
-            Motherboard: () => <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>,
-            Memory: () => <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" /></svg>,
-            Storage: () => <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" /></svg>,
-            Gpu: () => <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>,
-            Os: () => <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2zz" /></svg>,
-            App: () => <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>,
-            Input: () => <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" /></svg>,
-            Display: () => <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>,
-            Trash: () => <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>,
-            Check: () => <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>,
-            Alert: () => <svg className="w-5 h-5 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>,
-            Power: () => <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>,
-            Minus: () => <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 12H4" /></svg>,
-            Plus: () => <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" /></svg>,
-            Help: () => <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>,
-            Print: () => <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" /></svg>,
-            Home: () => <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>,
-            Fan: () => <svg className="w-full h-full text-slate-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/></svg>,
-            ArrowLeft: () => <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>,
-            Refresh: () => <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>,
-            Bulb: () => <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>,
-            Label: () => <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" /></svg>,
-            Star: () => <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>,
-            Lock: () => <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>,
-            Reset: () => <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg> // Using Trash icon as base for reset for now, or just text
+            Cpu: (props) => <svg className={props.className || "w-6 h-6"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" /></svg>,
+            Motherboard: (props) => <svg className={props.className || "w-6 h-6"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>,
+            Memory: (props) => <svg className={props.className || "w-6 h-6"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" /></svg>,
+            Storage: (props) => <svg className={props.className || "w-6 h-6"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" /></svg>,
+            Gpu: (props) => <svg className={props.className || "w-6 h-6"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>,
+            Os: (props) => <svg className={props.className || "w-6 h-6"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" /></svg>,
+            App: (props) => <svg className={props.className || "w-6 h-6"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>,
+            Input: (props) => <svg className={props.className || "w-6 h-6"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" /></svg>,
+            Display: (props) => <svg className={props.className || "w-6 h-6"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>,
+            Trash: (props) => <svg className={props.className || "w-4 h-4"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>,
+            Check: (props) => <svg className={props.className || "w-5 h-5 text-green-400"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>,
+            Alert: (props) => <svg className={props.className || "w-5 h-5 text-red-400"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>,
+            Power: (props) => <svg className={props.className || "w-6 h-6"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>,
+            Minus: (props) => <svg className={props.className || "w-4 h-4"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 12H4" /></svg>,
+            Plus: (props) => <svg className={props.className || "w-4 h-4"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" /></svg>,
+            Help: (props) => <svg className={props.className || "w-5 h-5"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>,
+            Print: (props) => <svg className={props.className || "w-5 h-5"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" /></svg>,
+            Home: (props) => <svg className={props.className || "w-5 h-5"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>,
+            Fan: (props) => <svg className={props.className || "w-full h-full text-slate-600"} fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/></svg>,
+            ArrowLeft: (props) => <svg className={props.className || "w-5 h-5"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>,
+            Refresh: (props) => <svg className={props.className || "w-4 h-4"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>,
+            Bulb: (props) => <svg className={props.className || "w-4 h-4"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>,
+            Label: (props) => <svg className={props.className || "w-4 h-4"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" /></svg>,
+            Star: (props) => <svg className={props.className || "w-5 h-5"} fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>,
+            Lock: (props) => <svg className={props.className || "w-5 h-5"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>,
+            Reset: (props) => <svg className={props.className || "w-4 h-4"} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
         };
 
         // Improved Fan Icon for animation
@@ -372,6 +372,38 @@
             </div>
         );
 
+        // --- Confirm Modal Component ---
+        const ConfirmModal = ({ isOpen, title, message, onConfirm, onCancel }) => {
+            if (!isOpen) return null;
+            return (
+                <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm animate-fade-in">
+                    <div className="bg-slate-800 border border-slate-700 rounded-2xl shadow-2xl p-6 w-80 max-w-[90vw] animate-pop-in">
+                        <div className="flex items-center gap-3 mb-4">
+                            <div className="p-2 bg-yellow-500/20 rounded-full text-yellow-500">
+                                <Icons.Alert className="w-6 h-6" />
+                            </div>
+                            <h3 className="text-lg font-bold text-white">{title}</h3>
+                        </div>
+                        <p className="text-slate-300 text-sm mb-6 leading-relaxed">{message}</p>
+                        <div className="flex gap-3">
+                            <button 
+                                onClick={onCancel}
+                                className="flex-1 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-slate-300 font-bold transition-colors"
+                            >
+                                キャンセル
+                            </button>
+                            <button 
+                                onClick={onConfirm}
+                                className="flex-1 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold transition-colors shadow-lg shadow-blue-900/20"
+                            >
+                                OK
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
         // --- Part Detail Overlay Component ---
         const PartDetailOverlay = ({ part }) => {
             if (!part) return null;
@@ -427,7 +459,7 @@
         };
 
         // --- Start Screen ---
-        const StartScreen = ({ onSelectMode, clearedQuizzes, onResetProgress }) => {
+        const StartScreen = ({ onSelectMode, clearedQuizzes, onResetProgress, showLabels, onToggleLabels }) => {
             const allNormalCleared = [1, 2, 3, 4, 5].every(id => clearedQuizzes.includes(id));
             
             const normalQuizzes = pcData.quizzes.filter(q => !q.isExtra);
@@ -445,6 +477,21 @@
                             </div>
                             <h1 className="text-5xl font-black tracking-tight mb-2 bg-gradient-to-r from-blue-400 to-green-400 text-transparent bg-clip-text">PC Master Build</h1>
                             <p className="text-xl text-slate-400">ハードウェア & ソフトウェア 構成シミュレータ</p>
+                            
+                            {/* Educational Label Toggle on Start Screen */}
+                            <div className="mt-4 flex justify-center">
+                                <button 
+                                    onClick={onToggleLabels}
+                                    className={`py-1.5 px-6 rounded-full text-xs font-bold flex items-center gap-2 transition-all border-2 ${
+                                        showLabels 
+                                        ? 'bg-yellow-600 border-yellow-500 text-white shadow-lg shadow-yellow-500/30' 
+                                        : 'bg-slate-800 border-slate-700 text-slate-400 hover:border-slate-600'
+                                    }`}
+                                >
+                                    <Icons.Label className="w-3 h-3" /> 
+                                    {showLabels ? "学習ラベル: 表示中 (五大装置)" : "学習ラベル: 非表示"}
+                                </button>
+                            </div>
                         </div>
 
                         <div className="flex-1 min-h-0 flex flex-col md:flex-row gap-6 w-full text-left">
@@ -538,7 +585,7 @@
         // --- Independent & Draggable Quiz Window ---
         const QuizWindow = ({ quiz, submissionResult, onSubmit, hasBooted, onViewSpecs, failedAttempts, currentCost }) => {
             const [minimized, setMinimized] = useState(false);
-            const [position, setPosition] = useState({ x: 20, y: 20 });
+            const [position, setPosition] = useState({ x: window.innerWidth > 1000 ? 800 : 400, y: 20 });
             const [isDragging, setIsDragging] = useState(false);
             const dragOffset = useRef({ x: 0, y: 0 });
 
@@ -1246,8 +1293,8 @@
                             <div className={`p-2 rounded-full mb-1 ${cat.color.replace('text-', 'bg-').replace('400', '900')} bg-opacity-30`}>
                                 {React.createElement(Icons[cat.icon])}
                             </div>
-                            <div className="text-center w-full overflow-hidden z-10 pb-4">
-                                <div className="text-xs font-bold text-slate-200 truncate px-1">{part.name}</div>
+                            <div className="text-center w-full overflow-visible z-10 pb-4">
+                                <div className="text-xs font-bold text-slate-200 px-1">{part.name}</div>
                                 {isValid ? 
                                     <div className="text-[10px] text-green-400">配置OK</div> : 
                                     <div className="text-[10px] text-red-400">互換性エラー</div>
@@ -1302,6 +1349,7 @@
 
         const App = () => {
             const [view, setView] = useState('menu'); 
+            const [confirmConfig, setConfirmConfig] = useState({ isOpen: false, title: '', message: '', onConfirm: null });
             const [selectedParts, setSelectedParts] = useState({});
             const [draggedPart, setDraggedPart] = useState(null);
             const [activeTab, setActiveTab] = useState('cpu');
@@ -1431,11 +1479,35 @@
             };
 
             const handleClearAll = () => {
-                if(confirm("全てのパーツを取り外しますか？")) {
-                    setSelectedParts({});
-                    setHasBooted(false);
-                    setSubmissionResult(null);
-                }
+                setConfirmConfig({
+                    isOpen: true,
+                    title: "構成リセット",
+                    message: "全てのパーツを取り外して、最初から作り直しますか？",
+                    onConfirm: () => {
+                        setSelectedParts({});
+                        setHasBooted(false);
+                        setSubmissionResult(null);
+                        setConfirmConfig(prev => ({ ...prev, isOpen: false }));
+                        setSystemLog([{
+                            id: Date.now(),
+                            type: 'info',
+                            text: '構成をリセットしました。',
+                            time: new Date().toLocaleTimeString()
+                        }]);
+                    }
+                });
+            };
+
+            const confirmGoHome = () => {
+                setConfirmConfig({
+                    isOpen: true,
+                    title: "メニューに戻る",
+                    message: "作業を中断してメニューに戻りますか？（現在の構成は保存されます）",
+                    onConfirm: () => {
+                        setConfirmConfig(prev => ({ ...prev, isOpen: false }));
+                        goHome();
+                    }
+                });
             };
 
             const validation = useMemo(() => {
@@ -1615,13 +1687,30 @@
                 setView('benchmark');
             };
 
-            if (view === 'menu') return <StartScreen onSelectMode={startMode} clearedQuizzes={clearedQuizzes} onResetProgress={handleResetProgress} />;
+            if (view === 'menu') return (
+                <StartScreen 
+                    onSelectMode={startMode} 
+                    clearedQuizzes={clearedQuizzes} 
+                    onResetProgress={handleResetProgress} 
+                    showLabels={showEducationalLabels}
+                    onToggleLabels={() => setShowEducationalLabels(!showEducationalLabels)}
+                />
+            );
             if (view === 'booting') return <BootScreen osName={selectedParts.os?.name} isHdd={selectedParts.storage?.name.includes('HDD')} onComplete={onBootComplete} />;
             if (view === 'benchmark') return <BenchmarkScreen parts={selectedParts} onBack={() => setView('build')} showLabels={showEducationalLabels} />;
             if (view === 'specSheet') return <SpecSheetScreen parts={selectedParts} quizTitle={quizMode?.title || '自由制作'} onGoHome={goHome} />;
 
             return (
-                <div className="flex h-screen bg-slate-900 text-slate-200 font-sans relative">
+                <div className="flex h-screen bg-slate-900 text-slate-200 font-sans relative overflow-hidden">
+                    {/* Confirm Modal */}
+                    <ConfirmModal 
+                        isOpen={confirmConfig.isOpen}
+                        title={confirmConfig.title}
+                        message={confirmConfig.message}
+                        onConfirm={confirmConfig.onConfirm}
+                        onCancel={() => setConfirmConfig(prev => ({ ...prev, isOpen: false }))}
+                    />
+
                     {/* Hover Overlay */}
                     {!draggedPart && !touchDragPart && <PartDetailOverlay part={hoveredPart} />}
 
@@ -1647,70 +1736,60 @@
                     />
 
                     {/* LEFT SIDEBAR */}
-                    <div className="w-80 flex flex-col border-r border-slate-700 bg-slate-800 z-10 shadow-xl">
-                        <div className="p-4 border-b border-slate-700 bg-slate-800 z-20">
-                            <button 
-                                onClick={goHome} 
-                                className="mb-4 w-full py-2 bg-slate-700 hover:bg-slate-600 text-slate-300 hover:text-white rounded flex items-center justify-center gap-2 text-sm font-bold transition-colors shadow-sm"
-                            >
-                                <Icons.ArrowLeft /> メニューに戻る
-                            </button>
-                            <div className="flex justify-between items-center mb-4">
-                                <h1 className="font-bold text-lg flex items-center gap-2 text-white">
-                                    <div className="bg-blue-600 p-1 rounded"><Icons.Motherboard /></div>
-                                    PC Simulator
+                    <div className="w-72 flex flex-col border-r border-slate-700 bg-slate-800 z-30 shadow-xl">
+                        <div className="p-3 border-b border-slate-700 bg-slate-800 z-40">
+                            <div className="flex justify-between items-center mb-3">
+                                <h1 className="font-bold text-base flex items-center gap-2 text-white">
+                                    <div className="bg-blue-600 p-1 rounded"><Icons.Motherboard className="w-4 h-4" /></div>
+                                    PC Sim
                                 </h1>
-                                <button 
-                                    onClick={handleClearAll}
-                                    title="構成をリセット"
-                                    className="text-xs bg-red-900/50 hover:bg-red-600 text-red-200 hover:text-white px-2 py-1 rounded transition flex items-center gap-1 border border-red-800/50"
-                                >
-                                    <Icons.Refresh /> Reset
-                                </button>
+                                <div className="flex gap-2">
+                                    <button 
+                                        onClick={handleClearAll}
+                                        title="構成をリセット"
+                                        className="text-[10px] bg-red-900/30 hover:bg-red-600 text-red-200 hover:text-white px-2 py-1 rounded transition flex items-center gap-1 border border-red-800/30"
+                                    >
+                                        <Icons.Refresh className="w-3 h-3" /> Reset
+                                    </button>
+                                    <button 
+                                        onClick={confirmGoHome}
+                                        title="メニューに戻る"
+                                        className="text-[10px] bg-slate-700 hover:bg-slate-600 text-slate-300 hover:text-white px-2 py-1 rounded transition flex items-center gap-1 border border-slate-600"
+                                    >
+                                        <Icons.Home className="w-3 h-3" /> Home
+                                    </button>
+                                </div>
                             </div>
                             
-                            {/* Educational Label Toggle */}
-                            <button 
-                                onClick={() => setShowEducationalLabels(!showEducationalLabels)}
-                                className={`w-full py-1.5 px-3 mb-4 rounded text-xs font-bold flex items-center justify-center gap-2 transition-all ${
-                                    showEducationalLabels 
-                                    ? 'bg-yellow-600 text-white shadow shadow-yellow-500/50' 
-                                    : 'bg-slate-700 text-slate-400 hover:bg-slate-600'
-                                }`}
-                            >
-                                <Icons.Label /> 
-                                {showEducationalLabels ? "学習ラベル: ON (五大装置)" : "学習ラベル: OFF"}
-                            </button>
-
-                            <div className="grid grid-cols-4 gap-2">
+                            <div className="grid grid-cols-4 gap-1.5">
                                 {Object.keys(pcData.categories).filter(key => key !== 'motherboard').map(key => (
                                     <button 
                                         key={key}
                                         onClick={() => setActiveTab(key)}
-                                        className={`flex flex-col items-center justify-center p-2 rounded transition-all ${
+                                        className={`flex flex-col items-center justify-center p-1.5 rounded transition-all ${
                                             activeTab === key ? 'bg-blue-600 text-white shadow-lg scale-105' : 'bg-slate-700 text-slate-400 hover:bg-slate-600'
                                         }`}
                                         title={pcData.categories[key].label}
                                     >
-                                        <div className="scale-75 mb-1">{React.createElement(Icons[pcData.categories[key].icon])}</div>
-                                        <span className="text-[9px] font-bold leading-none truncate w-full text-center">{pcData.categories[key].label.split(' ')[0]}</span>
+                                        <div className="scale-75 mb-0.5">{React.createElement(Icons[pcData.categories[key].icon])}</div>
+                                        <span className="text-[8px] font-bold leading-none truncate w-full text-center">{pcData.categories[key].label.split(' ')[0]}</span>
                                     </button>
                                 ))}
                             </div>
                         </div>
                         
-                        {/* Category Description Header */}
-                        <div className="bg-slate-700/50 p-4 border-b border-slate-700 flex items-start gap-3 shadow-sm">
-                            <div className={`p-2.5 rounded-lg bg-opacity-20 mt-0.5 shrink-0 ${pcData.categories[activeTab].color.replace('text-', 'bg-').replace('400', '500')} ${pcData.categories[activeTab].color}`}>
-                                {React.createElement(Icons[pcData.categories[activeTab].icon], { className: "w-6 h-6" })}
+                        {/* Category Description Header - Compact */}
+                        <div className="bg-slate-700/50 p-3 border-b border-slate-700 flex items-start gap-2 shadow-sm">
+                            <div className={`p-1.5 rounded-lg bg-opacity-20 mt-0.5 shrink-0 ${pcData.categories[activeTab].color.replace('text-', 'bg-').replace('400', '500')} ${pcData.categories[activeTab].color}`}>
+                                {React.createElement(Icons[pcData.categories[activeTab].icon], { className: "w-4 h-4" })}
                             </div>
-                            <div className="flex-1">
-                                <div className="text-base font-bold text-white mb-1.5">{pcData.categories[activeTab].label}</div>
-                                <div className="text-sm text-slate-200 leading-relaxed font-medium">{pcData.categories[activeTab].desc}</div>
+                            <div className="flex-1 min-w-0">
+                                <div className="text-xs font-bold text-white mb-0.5">{pcData.categories[activeTab].label}</div>
+                                <div className="text-[10px] text-slate-300 leading-tight font-medium line-clamp-2">{pcData.categories[activeTab].desc}</div>
                             </div>
                         </div>
 
-                        <div className="flex-1 overflow-y-auto p-3 space-y-2 bg-slate-900/50 scrollbar-hide relative">
+                        <div className="flex-1 overflow-y-auto p-2 space-y-1.5 bg-slate-900/50 scrollbar-hide relative">
                             {pcData.parts.filter(p => p.type === activeTab).map(part => (
                                 <PartCard 
                                     key={part.id} 
@@ -1729,12 +1808,12 @@
 
                     {/* MAIN AREA */}
                     <div className="flex-1 flex flex-col relative overflow-hidden bg-slate-950">
-                        {/* Status Bar */}
-                        <div className="h-16 border-b border-slate-800 bg-slate-900/90 backdrop-blur flex items-center justify-between px-8 z-20">
-                            <div className="flex items-center gap-8">
+                        {/* Status Bar - Compact */}
+                        <div className="h-12 border-b border-slate-800 bg-slate-900/90 backdrop-blur flex items-center justify-between px-6 z-20">
+                            <div className="flex items-center gap-6">
                                 <div>
-                                    <div className="text-[10px] text-slate-500 uppercase font-bold">Total Cost</div>
-                                    <div className="text-xl font-mono font-bold text-yellow-400">
+                                    <div className="text-[9px] text-slate-500 uppercase font-bold leading-none mb-1">Total Cost</div>
+                                    <div className="text-lg font-mono font-bold text-yellow-400 leading-none">
                                         ¥{currentTotalCost.toLocaleString()}
                                     </div>
                                 </div>
@@ -1744,92 +1823,96 @@
                                 onClick={() => setView('booting')}
                                 disabled={!validation.canBoot}
                                 className={`
-                                    flex items-center gap-3 px-8 py-3 rounded-full font-bold transition-all shadow-lg text-lg
+                                    flex items-center gap-2 px-6 py-2 rounded-full font-bold transition-all shadow-lg text-sm
                                     ${validation.canBoot 
-                                        ? 'bg-blue-600 hover:bg-blue-500 text-white shadow-blue-500/30 transform hover:-translate-y-1' 
+                                        ? 'bg-blue-600 hover:bg-blue-500 text-white shadow-blue-500/30 transform hover:-translate-y-0.5' 
                                         : 'bg-slate-800 text-slate-600 cursor-not-allowed border border-slate-700'
                                     }
                                 `}
                             >
-                                <Icons.Power />
-                                {validation.canBoot ? "POWER ON" : "BUILD INCOMPLETE"}
+                                <Icons.Power className="w-4 h-4" />
+                                {validation.canBoot ? "POWER ON" : "INCOMPLETE"}
                             </button>
                         </div>
 
                         {/* WORKSPACE */}
-                        <div className="flex-1 overflow-y-auto p-4 flex justify-center items-center">
-                            <div className="w-full max-w-7xl grid grid-cols-12 gap-6 h-[700px]">
+                        <div className="flex-1 overflow-y-auto p-4 flex justify-center items-start">
+                            <div className="w-full max-w-7xl grid grid-cols-12 gap-4 min-h-[600px]">
                                 {/* LEFT COLUMN (Main Hardware) */}
-                                <div className="col-span-9 flex flex-col gap-4 h-full">
+                                <div className="col-span-9 flex flex-col gap-3 h-full">
                                     {/* Top: Case Interior */}
-                                    <div className="bg-slate-900 rounded-2xl border-2 border-slate-700 p-2 relative shadow-2xl flex flex-col h-2/3">
-                                        <div className="absolute top-0 left-8 -mt-3 bg-slate-700 text-slate-300 px-4 py-0.5 text-xs font-bold rounded shadow z-10">CASE INTERIOR</div>
+                                    <div className="bg-slate-900 rounded-2xl border-2 border-slate-700 p-1.5 relative shadow-2xl flex flex-col h-[400px]">
+                                        <div className="absolute top-0 left-8 -mt-2.5 bg-slate-700 text-slate-300 px-3 py-0.5 text-[10px] font-bold rounded shadow z-10 uppercase">Case Interior</div>
                                         
                                         {/* Visual Fan */}
-                                        <div className="absolute top-8 right-8 w-24 h-24 text-slate-700 z-0 opacity-50">
+                                        <div className="absolute top-6 right-6 w-16 h-16 text-slate-700 z-0 opacity-30">
                                             <div className={hasBooted ? 'animate-spin-slow' : ''}>
                                                 <FanIcon />
                                             </div>
                                         </div>
 
-                                        <div className="flex-1 bg-pc-pcb rounded-xl relative overflow-hidden border border-slate-600 m-2 p-6 z-10">
-                                            <div className="absolute inset-0 opacity-10 pointer-events-none" style={{backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`, backgroundSize: '40px 40px'}}></div>
-                                            <div className="grid grid-cols-2 grid-rows-3 gap-6 h-full relative z-10">
+                                        <div className="flex-1 bg-pc-pcb rounded-xl relative overflow-hidden border border-slate-600 m-1.5 p-4 z-10">
+                                            <div className="absolute inset-0 opacity-10 pointer-events-none" style={{backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`, backgroundSize: '30px 30px'}}></div>
+                                            <div className="grid grid-cols-2 grid-rows-3 gap-4 h-full relative z-10">
                                                 <div className="flex flex-col">
-                                                    <DropZone type="cpu" label="LGA/AM5 SOCKET" part={selectedParts.cpu} onDrop={() => handlePartSelect(draggedPart)} onRemove={handleRemovePart} isTarget={draggedPart?.type === 'cpu' || touchDragPart?.type === 'cpu'} isValid={validation.checks.cpu} className="h-full" hasBooted={hasBooted} isActiveTab={activeTab === 'cpu'} showLabels={showEducationalLabels} />
-                                                    {selectedParts.motherboard && (<div className="text-center text-[10px] text-green-400/50 mt-1">Auto-Matched: {selectedParts.motherboard.name}</div>)}
+                                                    <DropZone type="cpu" label="CPU SOCKET" part={selectedParts.cpu} onDrop={() => handlePartSelect(draggedPart)} onRemove={handleRemovePart} isTarget={draggedPart?.type === 'cpu' || touchDragPart?.type === 'cpu'} isValid={validation.checks.cpu} className="h-full" hasBooted={hasBooted} isActiveTab={activeTab === 'cpu'} showLabels={showEducationalLabels} />
+                                                    {selectedParts.motherboard && (<div className="text-center text-[9px] text-green-400/50 mt-0.5 truncate">MB: {selectedParts.motherboard.name}</div>)}
                                                 </div>
                                                 <div className="flex flex-col">
-                                                    <DropZone type="memory" label="DIMM SLOTS" part={selectedParts.memory} onDrop={() => handlePartSelect(draggedPart)} onRemove={handleRemovePart} isTarget={draggedPart?.type === 'memory' || touchDragPart?.type === 'memory'} isValid={validation.checks.memory} className="h-full" hasBooted={hasBooted} isActiveTab={activeTab === 'memory'} showLabels={showEducationalLabels} />
+                                                    <DropZone type="memory" label="RAM SLOTS" part={selectedParts.memory} onDrop={() => handlePartSelect(draggedPart)} onRemove={handleRemovePart} isTarget={draggedPart?.type === 'memory' || touchDragPart?.type === 'memory'} isValid={validation.checks.memory} className="h-full" hasBooted={hasBooted} isActiveTab={activeTab === 'memory'} showLabels={showEducationalLabels} />
                                                 </div>
                                                 <div className="col-span-2 row-span-1">
-                                                     <DropZone type="gpu" label="PCIe x16 GRAPHICS" part={selectedParts.gpu} onDrop={() => handlePartSelect(draggedPart)} onRemove={handleRemovePart} isTarget={draggedPart?.type === 'gpu' || touchDragPart?.type === 'gpu'} isValid={validation.checks.gpu} className="h-full border-blue-500/20" hasBooted={hasBooted} isActiveTab={activeTab === 'gpu'} showLabels={showEducationalLabels} />
+                                                     <DropZone type="gpu" label="GPU SLOT" part={selectedParts.gpu} onDrop={() => handlePartSelect(draggedPart)} onRemove={handleRemovePart} isTarget={draggedPart?.type === 'gpu' || touchDragPart?.type === 'gpu'} isValid={validation.checks.gpu} className="h-full border-blue-500/20" hasBooted={hasBooted} isActiveTab={activeTab === 'gpu'} showLabels={showEducationalLabels} />
                                                 </div>
                                                 <div className="col-span-2">
-                                                    <DropZone type="storage" label="DRIVE BAY" part={selectedParts.storage} onDrop={() => handlePartSelect(draggedPart)} onRemove={handleRemovePart} isTarget={draggedPart?.type === 'storage' || touchDragPart?.type === 'storage'} isValid={validation.checks.storage} hasBooted={hasBooted} isActiveTab={activeTab === 'storage'} showLabels={showEducationalLabels} />
+                                                    <DropZone type="storage" label="STORAGE BAY" part={selectedParts.storage} onDrop={() => handlePartSelect(draggedPart)} onRemove={handleRemovePart} isTarget={draggedPart?.type === 'storage' || touchDragPart?.type === 'storage'} isValid={validation.checks.storage} hasBooted={hasBooted} isActiveTab={activeTab === 'storage'} showLabels={showEducationalLabels} />
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     {/* Bottom: Peripherals */}
-                                    <div className="bg-slate-800 rounded-xl border border-slate-700 p-4 shadow-lg flex-1 relative">
-                                        <div className="absolute top-0 left-8 -mt-3 bg-slate-700 text-slate-300 px-4 py-0.5 text-xs font-bold rounded shadow z-10">PERIPHERALS</div>
-                                        <div className="h-full pt-2 grid grid-cols-2 gap-4">
-                                            <DropZone type="input" label="KEYBOARD & MOUSE" part={selectedParts.input} onDrop={() => handlePartSelect(draggedPart)} onRemove={handleRemovePart} isTarget={draggedPart?.type === 'input' || touchDragPart?.type === 'input'} isValid={true} hasBooted={hasBooted} isActiveTab={activeTab === 'input'} showLabels={showEducationalLabels} />
+                                    <div className="bg-slate-800 rounded-xl border border-slate-700 p-3 shadow-lg h-[180px] relative">
+                                        <div className="absolute top-0 left-8 -mt-2.5 bg-slate-700 text-slate-300 px-3 py-0.5 text-[10px] font-bold rounded shadow z-10 uppercase">Peripherals</div>
+                                        <div className="h-full pt-1 grid grid-cols-2 gap-3">
+                                            <DropZone type="input" label="INPUT DEVICES" part={selectedParts.input} onDrop={() => handlePartSelect(draggedPart)} onRemove={handleRemovePart} isTarget={draggedPart?.type === 'input' || touchDragPart?.type === 'input'} isValid={true} hasBooted={hasBooted} isActiveTab={activeTab === 'input'} showLabels={showEducationalLabels} />
                                             <DropZone type="display" label="DISPLAY" part={selectedParts.display} onDrop={() => handlePartSelect(draggedPart)} onRemove={handleRemovePart} isTarget={draggedPart?.type === 'display' || touchDragPart?.type === 'display'} isValid={true} hasBooted={hasBooted} isActiveTab={activeTab === 'display'} showLabels={showEducationalLabels} />
                                         </div>
                                     </div>
                                 </div>
                                 
                                 {/* RIGHT COLUMN (Software & Logs) */}
-                                <div className="col-span-3 flex flex-col gap-4 h-full">
+                                <div className="col-span-3 flex flex-col gap-3 h-full">
                                     {/* Software */}
-                                    <div className="bg-slate-800 rounded-xl border border-slate-700 p-4 shadow-lg flex flex-col gap-2 h-1/3 relative">
-                                        <div className="absolute top-0 left-4 -mt-3 bg-slate-700 text-slate-300 px-4 py-0.5 text-xs font-bold rounded shadow z-10">SOFTWARE</div>
-                                        <div className="grid grid-rows-2 gap-2 flex-1 pt-2">
-                                            <DropZone type="os" label="OS" part={selectedParts.os} onDrop={() => handlePartSelect(draggedPart)} onRemove={handleRemovePart} isTarget={draggedPart?.type === 'os' || touchDragPart?.type === 'os'} isValid={true} isActiveTab={activeTab === 'os'} showLabels={showEducationalLabels} />
-                                            <DropZone type="app" label="APP" part={selectedParts.app} onDrop={() => handlePartSelect(draggedPart)} onRemove={handleRemovePart} isTarget={draggedPart?.type === 'app' || touchDragPart?.type === 'app'} isValid={true} isActiveTab={activeTab === 'app'} showLabels={showEducationalLabels} />
+                                    <div className="bg-slate-800 rounded-xl border border-slate-700 p-3 shadow-lg flex flex-col gap-2 min-h-[200px] relative">
+                                        <div className="absolute top-0 left-4 -mt-2.5 bg-slate-700 text-slate-300 px-3 py-0.5 text-[10px] font-bold rounded shadow z-10 uppercase">Software</div>
+                                        <div className="flex flex-col gap-2 flex-1 pt-1">
+                                            <div className="min-h-[5.5rem] h-auto">
+                                                <DropZone type="os" label="OS" part={selectedParts.os} onDrop={() => handlePartSelect(draggedPart)} onRemove={handleRemovePart} isTarget={draggedPart?.type === 'os' || touchDragPart?.type === 'os'} isValid={true} isActiveTab={activeTab === 'os'} showLabels={showEducationalLabels} />
+                                            </div>
+                                            <div className="min-h-[5.5rem] h-auto">
+                                                <DropZone type="app" label="APP" part={selectedParts.app} onDrop={() => handlePartSelect(draggedPart)} onRemove={handleRemovePart} isTarget={draggedPart?.type === 'app' || touchDragPart?.type === 'app'} isValid={true} isActiveTab={activeTab === 'app'} showLabels={showEducationalLabels} />
+                                            </div>
                                         </div>
                                     </div>
 
                                     {/* System Log */}
-                                    <div className="bg-slate-800 rounded-xl border border-slate-700 p-4 flex-1 flex flex-col overflow-hidden relative">
-                                        <h3 className="text-xs font-bold text-slate-400 uppercase mb-2 flex justify-between items-center"><span className="flex items-center gap-2"><Icons.Alert /> System Log</span></h3>
-                                        <div className="flex-1 overflow-y-auto pr-1 font-mono text-xs">
+                                    <div className="bg-slate-800 rounded-xl border border-slate-700 p-3 flex-1 flex flex-col overflow-hidden relative min-h-[150px]">
+                                        <h3 className="text-[10px] font-bold text-slate-400 uppercase mb-2 flex justify-between items-center"><span className="flex items-center gap-1.5"><Icons.Alert className="w-3 h-3" /> System Log</span></h3>
+                                        <div className="flex-1 overflow-y-auto pr-1 font-mono text-[10px]">
                                             <div className="space-y-1">
                                                 {validation.errors.map((e, i) => (
-                                                    <div key={`err-${i}`} className="flex gap-2 text-red-300 bg-red-900/20 p-2 rounded items-start"><Icons.Alert /> <span>{e}</span></div>
+                                                    <div key={`err-${i}`} className="flex gap-1.5 text-red-300 bg-red-900/20 p-1.5 rounded items-start"><Icons.Alert className="w-3 h-3 shrink-0 mt-0.5" /> <span>{e}</span></div>
                                                 ))}
 
                                                 {validation.warnings.map((w, i) => (
-                                                    <div key={`warn-${i}`} className="flex gap-2 text-yellow-200 bg-yellow-900/20 p-2 rounded items-start"><Icons.Alert className="text-yellow-400" /> <span>{w}</span></div>
+                                                    <div key={`warn-${i}`} className="flex gap-1.5 text-yellow-200 bg-yellow-900/20 p-1.5 rounded items-start"><Icons.Alert className="text-yellow-400 w-3 h-3 shrink-0 mt-0.5" /> <span>{w}</span></div>
                                                 ))}
 
                                                 {validation.errors.length === 0 && validation.warnings.length === 0 && (
-                                                    <div className="text-green-500 flex items-center gap-2 p-2 bg-green-900/10 rounded"><Icons.Check /> System check passed. No critical errors found.</div>
+                                                    <div className="text-green-500 flex items-center gap-1.5 p-1.5 bg-green-900/10 rounded"><Icons.Check className="w-3 h-3" /> System check passed.</div>
                                                 )}
                                                 
-                                                <div className="mt-4 text-slate-600 border-t border-slate-700 pt-2">
+                                                <div className="mt-2 text-slate-600 border-t border-slate-700 pt-1">
                                                     <div>&gt; BIOS Check... OK</div>
                                                 </div>
                                             </div>
